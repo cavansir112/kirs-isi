@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Barama.az</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://barama.az/public/img/fav.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://barama.az/public/img/fav.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- ====================== navbar ======================= -->
+
+    <div class="navbar1 p-0 ">
+        <div class="navbar-top">
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-6 d-flex ">
+                        <h6>2009 - İdeya sizdən - dəstək bizdən</h6>               
+                    </div>
+                    <div class="col-6  text-right d-flex align-items-center justify-content-end">
+                        <a class="mr-3" id="introduction" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş</a>
+                        <!-- ================================== modal =========================== -->
+                        <div id="id01" class="modal ">
+                        
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="img/foto34.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container d-flex flex-column align-items-start">
+                                <label for="uname"><b>Email</b></label>
+                                <input  class="input-1" type="text" placeholder="Email daxil et" name="uname" required>
+
+                                <label for="psw"><b>Parol</b></label>
+                                <input class="input-1" type="password" placeholder="Parol daxil et" name="psw" required>
+            
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Məni xatırla
+                                </label>
+                                </div>
+                                <div class="d-flex justify-content-end ">
+                                    <button class="animate-btn">Daxil ol</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- ================================== modal =========================== -->
+                        <script src="js/main.js">
+                            // Get the modal
+                            var modal = document.getElementById('id01');
+                    
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                        <div class="dropdown border-none language-btn d-flex align-items-center">
+                            <a class="btn d-flex align-items-center p-0 " href="#" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="mr-2" src="img/foto1.png" alt="">  AZE  <i class="fas fa-angle-down"></i>
+                            </a>
+                          
+                            <div class="dropdown-menu language" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item px-2" href="#"><img class="mr-2" src="img/foto13.png" alt="">  ENG</a>
+                              <a class="dropdown-item px-2" href="#"><img class="mr-2" src="img/foto29.png" alt="">  RUS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-section bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 ">
+                    <a href="../index.html"><img src="img/foto2.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav position-relative">
+                            <li class="nav-item ">
+                                <a class="" href="#">BARAMA  <i class="fas fa-angle-down"></i></a>
+                                <ul class="child-menu position-absolute d-flex flex-column">
+                                    <li><a href="">Barama Nədir?</a></li>
+                                    <li><a href="">İnkubasiya Proqramı</a></li>
+                                    <li><a href="">Mentorlar</a></li>
+                                    <li><a href="">Partnyorlar</a></li>
+                                    <li><a href="">Qeydiyyat</a></li>
+                                    <li><a href="">Coworking</a></li>
+                                    <li><a href="">Qalereya</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item">
+                            <a class="" href="#">STARTUPLAR</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="" href="#">XƏBƏRLƏR</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="" href="#">BARAMA VİDEO</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="" href="#">TƏDBİRLƏR</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- ====================== //navbar ======================= -->
+    <!-- ====================== main-container ======================= -->
+    
+        <div class="main-container position-relative ">
+            <img src="img/foto13.jpg" alt="">
+        </div>
+
+    <!-- ====================== //main-container ======================= -->
+
+    <div class="siwtchable border-top border-white ">
+        <div class="container mb-5  ">
+            <div class="row mb-5 ">
+                <div class="col-12 d-flex justify-content-center"><h1>Əlaqə</h1></div>
+                <div class="col-lg-5 col-md-12 d-flex flex-column border-lg-right border-none border-white justify-content-center align-items-center mb-5 ">
+                    <img src="img/foto12.png" alt="">
+                </div>
+                <div class="col-lg-7 col-md-12 d-flex flex-column align-items-center  justify-content-center mb-5 text-center">
+                    <div class="form-sidebar contact-form-style-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 text-center">
+                                <p><span class="wpcf7-form-control-wrap name">
+                                    <input  type="text" name="Ad" value="" size="30" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="Ad">
+                                    </span>
+                                </p>
+                                <p><span class="wpcf7-form-control-wrap email">
+                                    <input  type="email" name="email" value="" size="30" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span>
+                                </p>
+                                <h4>Xocalı pros.37, mərtəbə 18,<br> AZ1025 Bakı, Azərbaycan</h4>
+                                <h2 class="info"><a class="mb-2" href="">info@barama.az</a></h2>
+                            </div>
+                            
+                            <div class="col-lg-6 col-12">
+                                <p><span class="wpcf7-form-control-wrap your-message">
+                                    <textarea name="your-message" cols="33" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Mesaj.."></textarea></span>
+                                </p>
+                                <button class="btn2" href=""><span>GÖNDER</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-section position-relative ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.162034791485!2d49.869346715107696!3d40.38310126560847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d1959f66cb9%3A0x980335e87e67dae9!2sBarama+Innovation+and+Entrepreneurship+Center!5e0!3m2!1sen!2s!4v1501215878556" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <!-- ====================== //siwtchable ======================= -->
+    <!-- ====================== footer ======================= -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+                    <div class="legal">
+                        <p> © 2018 Azercell </p>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Legal</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 d-flex justify-content-center">
+                    <div class="website">
+                        <a href="">Haqqında</a>
+                        <a href="">Startuplar</a>
+                        <a href="">Bloq</a>
+                        <a href="">Barama Video</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12  d-flex justify-content-center">
+                    <div class="Social-Networking">
+                        <a class="a1" href="https://twitter.com/BaramaAzercell"><i class="fab fa-twitter twitter"></i></a>
+                        <a class="a2" href="https://www.facebook.com/barama.az"><i class="fab fa-facebook-f facebook"></i></a>
+                        <a class="a3" href="https://www.instagram.com/barama_innovation_center/"><i class="fab fa-instagram instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ====================== //footer ======================= -->

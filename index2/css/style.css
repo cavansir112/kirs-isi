@@ -1,0 +1,707 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/foto29.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face{
+    font-family: Brandon;
+    src: url(../fonts/Brandon/Brandon-TextBold.otf);
+}
+
+
+@font-face{
+    font-family: Beradon;
+    src: url(../fonts/Beradon/Beradon-Script.otf);
+}
+
+@font-face{
+    font-family: Brandon-Medium;
+    src: url(../fonts/Brandon/Brandon-Medium.otf);
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media(min-width:1200px){
+    .container{
+        max-width: 1400px;
+    }
+}
+
+/* ================= navbar-top ================= */
+
+.navbar{
+    display: flex;
+    align-items: flex-start;
+}
+
+.navbar-top{
+    width: 100%;
+    height: 40px;
+    /* background-color: #191919; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.navbar-top h6{
+    color: snow;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.navbar-top #introduction{
+    color: snow;
+    font-size: 14px;
+    margin: 0;
+    font-family: Brandon-Medium;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.navbar-top #introduction:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+.navbar-top img{
+    width:20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+
+.navbar-top i{
+    margin-left: 5px;
+    color: snow;
+    font-size: 12px;
+}
+
+.language-btn a{
+    font-size: 12px;
+    font-family: Brandon-Medium;
+    color:white;
+}
+
+.language-btn a:hover{
+    font-size: 12px;
+    font-family: Brandon-Medium;
+    color: white;
+}
+
+.language a{
+    font-size: 12px;
+    font-family: Brandon-Medium;
+    color:black;
+    display: flex;
+    align-items: center;
+}
+
+.language a:hover{
+    background-color: rgb(231, 231, 228);
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+/* ================= //navbar-top ================= */
+
+/* ================= navbar-menu ================= */
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.navbar img{
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    z-index: 12;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.child-menu {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 60px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    z-index: 20;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+@media(max-width:1000px){
+    .child-menu{
+        margin-left: 120px;
+    }
+}
+
+
+.navbar ul li:hover .child-menu{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+@media(max-width:1000px){
+    .navbar ul li:hover .child-menu{
+        margin-top: -30px;
+    }
+}
+
+
+@media(min-width:1000px){
+    .menu{
+        display: none;
+    }
+}
+
+
+.child-menu li{
+    padding: 3px 0 !important;
+
+}
+
+.child-menu li a{
+    font-size: 17px;
+
+}
+
+.navbar ul li{
+    padding: 15px 0px 15px 35px;
+    font-size: 14px;
+}
+
+@media(max-width:1000px){
+    .navbar ul li{
+        background-color: white; 
+    }
+}
+
+.navbar ul li a{
+    color:black;
+    font-family: Brandon;
+}
+
+
+
+.navbar ul li a:hover{
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover i{
+    transform: rotate(180deg);
+    transition: 0.5s;
+    color:blueviolet;
+}
+
+.navbar .btn{
+    padding: 5px 25px;
+    border:solid 1px black;
+    font-size: 14px;
+    color:black;
+    font-weight: 700;
+    font-family: Brandon; 
+}
+
+.navbar .btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+/* ================= //navbar-menu ================= */
+
+
+/*======================== modal ====================== */
+
+
+.input-1[type=text],.input-1[type=password] {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  @media(max-width:1000px){
+    input[type=text], input[type=password]{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  
+  @media(max-width:1000px){
+    .cancelbtn{
+        padding: 5px 10px;
+    }
+}
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+  }
+  
+
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    z-index: 99999;
+  }
+
+  
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+
+  @media(max-width:1000px){
+    .modal-content{
+       width: 40%;
+    }
+}
+
+@media(max-width:600px){
+    .modal-content{
+       width: 50%;
+    }
+}
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+    label {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .animate-btn{
+        width: 70px;
+        height: 40px;
+        background-color: #26014F;
+        color: white;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border-style: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 13px;
+
+    }
+
+    @media(max-width:1000px){
+        .animate-btn{
+           width: 50px;
+           height: 30px;
+           font-size: 10px
+        }
+    }
+
+    @media(max-width:540px){
+        .animate-btn{
+           width: 40px;
+           height: 25px;
+           font-size: 7px
+        }
+    }
+
+    .animate-btn:hover{
+        background-color: #662888;
+    }
+
+  /*======================== modal ====================== */
+
+/* ================= main-container ================= */
+
+.main-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 0;
+}
+
+
+.main-container img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+/* ================= //main-container ================= */
+
+/* ================= siwtchable ================= */
+
+.siwtchable{
+    padding-top: 100px;
+}
+
+
+.siwtchable h1{
+    font-size: 40px;
+    color: white;
+    font-family: Brandon;
+    margin-bottom: 150px;
+
+}
+
+
+@media(max-width:540px){
+    .siwtchable h1{
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width:740px){
+    .wpcf7-form-control-wrap{
+        width: 100%;
+    }
+}
+
+#fname{
+    width: 100%;
+    
+}
+
+.contact-form-style-6{
+    margin-bottom: 80px;
+}
+
+.contact-form-style-6 input {
+    background-color: rgba(230, 230, 230, 0.11)!important;
+    border: medium none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:white;
+}
+
+@media(max-width:1100px){
+    .contact-form-style-6 input{
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+}
+
+.contact-form-style-6 textarea{
+    background-color: rgba(230, 230, 230, 0.11)!important;
+    border: medium none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color:white;
+}
+
+@media(max-width:1100px){
+    .contact-form-style-6 textarea{
+        padding: 8px 12px;
+    }
+} 
+
+  .contact-form-style-6 .btn2{
+    border-radius: 4px;
+    background-color: #662888;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 15px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px auto;
+  }
+  
+  .contact-form-style-6 .btn2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .contact-form-style-6 .btn2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .contact-form-style-6 .btn2:hover span {
+    padding-right: 25px;
+  }
+  
+  .contact-form-style-6 .btn2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.siwtchable h4{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-family: Brandon-Medium;
+    margin-top: 50px;
+}
+
+@media(max-width:1100px){
+    .siwtchable h4{
+       font-size: 20px;
+    }
+}
+
+.siwtchable img{
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+@media(max-width:1200px){
+    .siwtchable img{
+        width: 300px;
+    }
+}
+
+@media(max-width:1000px){
+    .siwtchable h2{
+        margin-bottom: 30px;
+    }
+
+}
+
+.siwtchable h2 a{
+    font-size: 20px;
+    color:white;
+    font-family: Brandon-Medium;
+    line-height: 0.8;
+}
+
+.siwtchable a:hover{
+    text-decoration: underline;
+
+}
+
+.map-section{
+    height: 380px;
+}
+
+
+/* ================= //siwtchable ================= */
+
+/* ================= footer ================= */
+
+.footer{
+    padding: 30px 0;
+    background-color: rgb(16, 1, 32);
+}
+
+.legal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.legal p{
+    color: white;
+    font-size: 12px;
+    margin: 0;
+    font-family: Brandon-Medium;
+}
+
+.legal a{
+    color: white;
+    font-size: 12px;
+    margin: 0 20px;
+    font-family: Brandon-Medium;
+    line-height: 0.9;
+}
+
+.legal a:hover{
+    text-decoration: underline;
+}
+
+.website{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:1000px){
+    .website{
+        margin: 20px 0;
+    }
+}
+
+.website a{
+    color: white;
+    font-size: 15px;
+    margin-right: 40px;
+    font-family: Brandon-Medium;
+    line-height: 0.9;
+}
+@media(max-width:1000px){
+    .website a{
+        margin-right: 20px ;
+    }
+}
+
+.website a:hover{
+    text-decoration: underline;
+}
+
+.Social-Networking{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Social-Networking i{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.Social-Networking a{
+    width: 50px;
+    height: 50px;
+    margin-right:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.Social-Networking .a1:hover{
+    background-color: rgb(0, 162, 255);
+    transition: 0.3s;
+}
+
+.Social-Networking .a2:hover{
+    background-color:rgb(47, 89, 179);
+    transition: 0.3s;
+}
+
+.Social-Networking .a3:hover{
+    background:linear-gradient(to left top, #DD2A7B, #F58529);
+    transition: 0.3s;
+
+}
+/* ================= //footer ================= */
+
